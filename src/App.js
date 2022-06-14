@@ -5,10 +5,7 @@ import "./App.css";
 // Components
 import Nav from "./components/Nav";
 import Home from "./components/Home";
-import VideoList from "./components/VideoList";
-import Video from "./components/Video";
 import About from "./components/About";
-import Search from "./components/Search";
 
 const App = () => {
   return (
@@ -17,8 +14,8 @@ const App = () => {
         <div>
           <Nav />
           <Routes>
-            <Route exact path = "/" element={<Home/>}/>
-            <Route exact path = "/about" element={<About/>}/>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/about" element={<About />} />
           </Routes>
         </div>
       </header>
