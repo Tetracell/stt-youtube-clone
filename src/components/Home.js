@@ -1,3 +1,7 @@
+import VideoList from "./VideoList";
+import Video from "./Video";
+import Search from "./Search";
+
 const Home = (() => {
     return (
         <p>
