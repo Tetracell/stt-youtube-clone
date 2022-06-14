@@ -2,12 +2,18 @@ import VideoList from "./VideoList";
 import Video from "./Video";
 import Search from "./Search";
 
-const Home = (() => {
+const Home = () => {
     return (
-        <p>
-            I am the base home page! I will include the search bar and the list of videos!
-        </p>
+        <div>
+            <form>
+                <label>What would you like to see today?
+                <br/>
+                <input type='text' placeholder='search here' id='search-bar' name='search' ></input>
+                </label>
+                <button type='submit'>Search</button>
+            </form>
+        </div>
     )
-})
+}
 
 export default Home;
