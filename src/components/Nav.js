@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   return (
     <div className="navbar">
-      <p> I am the Nav Bar! The below links are a part of me.</p>
+        <img
+        classname="logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/502px-Logo_of_YouTube_%282015-2017%29.svg.png"
+      />
       <ul>
         <li id="homelink">
           <Link to={"/"}> Home </Link>
