@@ -9,13 +9,12 @@ import Nav from "./Nav";
 
 const Home = () => {
   const [request, setRequest] = useState("");
-  console.log(process.env.REACT_APP_YOUTUBE_API_KEY)
-  
-  console.log(process.env)
+  //console.log(process.env.REACT_APP_YOUTUBE_API_KEY)
+  console.log(process.env.YOUTUBE_API_KEY);
 
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     console.log(`This is the search query : ${request}`)
     setRequest("");
     try {
@@ -46,6 +45,4 @@ const Home = () => {
     </div>
   );
 };
-
-// The line 28 onclick is wrapped in an anonymous function to prevent the page from reloading after every update.
 export default Home;
