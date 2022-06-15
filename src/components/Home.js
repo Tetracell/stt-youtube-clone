@@ -2,18 +2,24 @@ import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import { search } from "../fetch.js"
 
+
 import VideoList from "./VideoList";
 import Video from "./Video";
 import Nav from "./Nav";
 
 const Home = () => {
   const [request, setRequest] = useState("");
-  let results;
-  const handleSubmit = (query) => {
-    console.log(`This is the search query : ${query}`)
+  console.log(process.env.REACT_APP_YOUTUBE_API_KEY)
+  
+  console.log(process.env)
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log(`This is the search query : ${request}`)
     setRequest("");
     try {
-        results = search(query);
+        console.log(search(request));
     } catch (error) {
         console.log(error);
     }
@@ -21,7 +27,7 @@ const Home = () => {
 
   return (
     <div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label>
           What would you like to see today?
           <br />
@@ -34,7 +40,7 @@ const Home = () => {
             onChange={(e) => setRequest(e.target.value)}
           ></input>
         </label>
-        <button type="button" onClick={(() => handleSubmit(request))} >Search</button>
+        <button type="submit">Search</button>
         <VideoList/>
       </form>
     </div>
