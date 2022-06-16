@@ -6,6 +6,7 @@ import "./App.css";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import About from "./components/About";
+import Video from "./components/Video";
 
 const App = () => {
   return (
@@ -13,10 +14,10 @@ const App = () => {
       <header className="App-header">
         <div>
           <Nav />
-
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/about" element={<About />} />
+            <Route path="/video/" element={<Video />} />
           </Routes>
         </div>
       </header>
