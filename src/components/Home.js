@@ -1,33 +1,35 @@
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
-import { search } from "../fetch.js"
-
 
 import VideoList from "./VideoList";
 import Video from "./Video";
-import Nav from "./Nav";
 
 const Home = () => {
   const [request, setRequest] = useState("");
-  console.log(process.env.REACT_APP_YOUTUBE_API_KEY)
-  
-  console.log(process.env)
-
+  const [results, setResults] = useState([]);
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log(`This is the search query : ${request}`)
-    setRequest("");
+    e.preventDefault();
+    //console.log(`This is the search query : ${request}`);
     try {
-        console.log(search(request));
+      fetch(
+        `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=${request}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          //debugger;
+          console.log(data);
+          setResults(data.items);
+        });
     } catch (error) {
-        console.log(error);
+      console.log(error);
     }
+    setRequest("");
   };
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="form">
         <label>
           What would you like to see today?
           <br />
@@ -41,11 +43,10 @@ const Home = () => {
           ></input>
         </label>
         <button type="submit">Search</button>
-        <VideoList/>
       </form>
+      <VideoList results={results} />
     </div>
   );
 };
 
-// The line 28 onclick is wrapped in an anonymous function to prevent the page from reloading after every update.
 export default Home;

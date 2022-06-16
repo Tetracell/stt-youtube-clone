@@ -13,6 +13,7 @@ const App = () => {
       <header className="App-header">
         <div>
           <Nav />
+
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/about" element={<About />} />

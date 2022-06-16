@@ -1,10 +1,16 @@
 .fellows img{
     width: 200px;
+    border-radius: 50%;
+}
+
+.fellows img:hover{
+    transform: scale(1.15);
 }
 
 .fellows{
+    text-align: center;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "f f f"
     "a s t";
 }
@@ -28,11 +34,36 @@
     text-align: center;
 }
 
-.logo{
-    
+#gitlogo {
+    width: 30px;
 }
 
-.link{
-    opacity: 0.5;
+.navbar img{
+    float: left;
+    width: 100px;
+    padding: 5px;
 }
+
+.navbar{
+    background-color: red;
+    text-align: center;
+    line-height:50px;
+    height:50px;
+}
+
+#nav-list{
+    list-style: none;
+}
+
+#nav-list li{
+    display: inline;
+    font-size: 18px;
+    margin: 20px;
+ }
+
+ .form{
+    margin: 20px;
+    text-align: center;
+ }
+
 

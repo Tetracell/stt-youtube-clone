@@ -1,7 +1,11 @@
-const VideoList = (() => {
-    return (
-        <p>I will be a list of videos that you searched for</p>
-    )
-})
+const VideoList = ({ results }) => {
+  if (!results) {
+    return <p> Error </p>;
+  } else {
+    return results.map((item) => {
+      return <div>{item.snippet.title}</div>;
+    });
+  }
+};
 
 export default VideoList;
