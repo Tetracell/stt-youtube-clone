@@ -1,0 +1,39 @@
+.fellows img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.fellows img:hover{
+    transform: scale(1.15);
+}
+
+.fellows{
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+    "f f f"
+    "a s t";
+}
+
+.fellows h1{
+    grid-area: f;
+    text-align: center;
+}
+
+.fellow-one{
+    grid-area: a;
+}
+.fellow-two{
+    grid-area: s;
+}
+.fellow-three{
+    grid-area: t;
+}
+
+.project h1{
+    text-align: center;
+}
+
+#gitlogo {
+    width: 30px;
+}

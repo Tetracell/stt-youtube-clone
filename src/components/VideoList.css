@@ -1,0 +1,13 @@
+.videolist{
+    display: grid;
+    grid-template-areas: "a b c";
+ }
+
+ .video{
+    font-size: medium;
+    text-align: center;
+ }
+
+ #verified{
+    width: 13px;
+ }
