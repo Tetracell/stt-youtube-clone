@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Routes, Route } from "react-router-dom";
 
 const VideoList = ({ results }) => {
   if (!results) {
@@ -8,9 +8,8 @@ const VideoList = ({ results }) => {
     return results.map((item) => {
       return (
         <div id={item.id.videoId} className="videoSnippet">
-          <Link to="video/:id" />
-          <img src={item.snippet.thumbnails.default.url}/>
-          <p>{item.snippet.title}</p>
+          <img src={item.snippet.thumbnails.default.url} />
+          <Link to={`video/${item.id.videoId}`}>{item.snippet.title}</Link>
           <p>{item.snippet.channelTitle}</p>
         </div>
       );
