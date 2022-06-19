@@ -1,13 +1,7 @@
 import React from "react";
-
-import { useState } from "react";
-
 import VideoList from "./VideoList";
 import { Error } from "./Error";
-import Video from "./Video";
-
 import { useState } from "react";
-import VideoList from "./VideoList";
 
 
 import "./Home.css";
