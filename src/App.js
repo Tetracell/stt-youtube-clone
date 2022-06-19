@@ -10,7 +10,11 @@ import About from "./components/About";
 import Video from "./components/Video";
 import { Error } from "./components/Error";
 
+
+
 const App = () => {
+  const [isOpen, setIsOpen]=useState(false);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -20,7 +24,7 @@ const App = () => {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/about" element={<About />} />
             <Route exact path="/video/:id" element={<Video />} />
-            <Route path="*" element={<Error />} />
+            <Route path="*" element={<Error setIsOpen={setIsOpen}/>} />
           </Routes>
         </div>
       </header>

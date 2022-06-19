@@ -45,7 +45,7 @@ const Home = () => {
         <button type="submit">Search</button>
       </form>
       <div className="videolist">
-      <VideoList results={results} />
+        <VideoList results={results} />
       </div>
     </div>
   );
