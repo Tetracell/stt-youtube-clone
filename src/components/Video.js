@@ -1,7 +1,6 @@
 import React from "react";
 import YouTube from "react-youtube";
 import { useParams } from "react-router-dom";
-import "./video.css";
 
 //Display a sample video in place to make sure functionality works
 const Video = () => {
@@ -12,16 +11,14 @@ const Video = () => {
     width: "600",
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
-      autplay: 1,
+      autoplay: 1,
     },
   };
-
-  const onReady = () => {};
 
   return (
     <div>
       <p>I will be the singular video that you click on!</p>
-      <YouTube videoId={videoId.id} opts={options} onReady={onReady} />
+      <YouTube videoId={videoId.id} opts={options} />
     </div>
   );
 };
