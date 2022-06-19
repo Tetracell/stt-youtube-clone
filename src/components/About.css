@@ -1,0 +1,54 @@
+.fellows img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.fellows img:hover{
+    transform: scale(1.15);
+}
+
+.fellows{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: 10px;
+    padding: 10px;
+}
+
+.fellow-one{
+    grid-column: 1/2;
+    max-width: 350px;
+}
+.fellow-two{
+    grid-column: 2/3;
+    max-width: 350px;
+}
+.fellow-two p{
+    text-align: justify;
+}
+
+.fellow-three{
+    grid-column: 3/4;
+    max-width: 350px;
+}
+
+.project h1{
+    text-align: center;
+}
+
+#github {
+    width: 30px;
+}
+
+#linkedin {
+    width: 30px;
+}
+
+#email{
+    width: 30px;
+}
+
+.link{
+    padding-right: 5px;
+}
+

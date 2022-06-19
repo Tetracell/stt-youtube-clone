@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./About.css";
 import React from "react";
 
 const tom = require("../images/Tom_LaTulipe.jpg");
@@ -102,5 +103,6 @@ const About = () => {
       </div>
     </div>
   );
+
 };
 export default About;
