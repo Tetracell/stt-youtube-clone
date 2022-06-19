@@ -15,7 +15,7 @@ const Home = () => {
     
     try {
       if (!request) {
-        throw error;
+        throw "Please enter a search request!";
       }
       fetch(
         `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=9&q=${request}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`

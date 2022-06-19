@@ -17,7 +17,6 @@ const Video = () => {
 
   return (
     <div>
-      <p>I will be the singular video that you click on!</p>
       <YouTube videoId={videoId.id} opts={options} />
     </div>
   );
