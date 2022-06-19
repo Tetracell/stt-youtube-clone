@@ -1,9 +1,9 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+
 import { useState } from "react";
 
 import VideoList from "./VideoList";
-import Video from "./Video";
+
 import "./Home.css";
 
 const Home = () => {

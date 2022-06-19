@@ -11,10 +11,6 @@ import About from "./components/About";
 import Video from "./components/Video";
 
 const App = () => {
-  const [linkId, setLinkId] = useState("");
-  const handleClick= (e) => {
-    setLinkId()
-  };
   return (
     <div className="App">
       <header className="App-header">
