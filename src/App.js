@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import "./App.css";
 
-
 // Components
 import Nav from "./components/Nav";
 import Home from "./components/Home";
