@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import "./About.css";
+import React from "react";
+
+const tom = require("../images/Tom_LaTulipe.jpg");
+const samantha = require("../images/Samantha_Figueroa.jpg");
+const thierry = require("../images/Thierry_Ankoue.jpg");
 
 const About = () => {
-
     return (
         <div className="about">
             <div>
@@ -13,7 +17,7 @@ const About = () => {
             </div>
             <div className="fellows">
             <section className="fellow-one">
-                <img src alt=''></img>
+                <img src={thierry} alt=''></img>
                 <h3>Thierry Ankoue </h3>
                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
                 <a href="https://github.com/KingAnkoue">
@@ -21,7 +25,7 @@ const About = () => {
                 </a>
             </section>
             <section className="fellow-two">
-                <img src alt=''></img>
+                <img src={samantha} alt=''></img>
                 <h3>Samantha Figueroa</h3>
                 <p>Hi! My name is Sam and I am currently working with the World Day of Prayer International Committee as their Administrative & Communications Associate. I am Puerto Rican but have lived in NY my whole life. I love the city but enjoy visting my island as much as possible. I graduated Hunter College with a BA in Psychology but am now developing my web development skills in Javascript, HTML, CSS and React as a Pursuit fellow. In my free time I enjoy roller skating, playing video games, reading, and binge-watching my favorite tv shows or having move marathons.</p>
                 <a href="https://github.com/samfigueroa92">
@@ -35,7 +39,7 @@ const About = () => {
                 </a>
             </section>
             <section className="fellow-three">
-                <img src alt=""></img>
+                <img src={tom} alt=""></img>
                 <h3>Tom LaTulipe</h3>
                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
                 <a href="https://github.com/Tetracell">

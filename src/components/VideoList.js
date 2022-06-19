@@ -1,5 +1,8 @@
-import { Link } from "react-router-dom";
+
+import React from "react";
+import { Link, Routes, Route } from "react-router-dom";
 import "./VideoList.css"
+
 
 const VideoList = ({ results }) => {
   if (!results) {
@@ -10,7 +13,7 @@ const VideoList = ({ results }) => {
         <div key={item.id.videoId} className="video">
             <Link to="video/:id" />
             <section>
-            <img src={item.snippet.thumbnails.medium.url} alt=''/> 
+            <Link to={`video/${item.id.videoId}`}><img src={item.snippet.thumbnails.medium.url} alt=''/></Link>
             <p>
               {item.snippet.title}
               <br/>
