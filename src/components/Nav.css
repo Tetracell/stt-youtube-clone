@@ -20,3 +20,23 @@
     font-size: 18px;
     margin: 15px;
  }
+
+ #homelink a{
+    text-decoration: none;
+    color: white;
+ }
+
+ #aboutlink a{
+    text-decoration: none;
+    color: white;
+ }
+
+ #homelink a:hover{
+    text-decoration: underline;
+    color: black;
+ }
+
+ #aboutlink a:hover{
+    text-decoration: underline;
+    color: black;
+ }

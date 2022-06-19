@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./About.css";
 import React from "react";
 
@@ -19,9 +18,15 @@ const About = () => {
             <section className="fellow-one">
                 <img src={thierry} alt=''></img>
                 <h3>Thierry Ankoue </h3>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
                 <a href="https://github.com/KingAnkoue">
                 <img src='https://cdn4.iconfinder.com/data/icons/geomicons/32/672344-github-512.png' id="github" alt='github-logo' className='link'/>
+                </a>
+                <a href="">
+                    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png' id="linkedin" alt='linkedin-logo' className='link'/>
+                </a>
+                <a href="mailto: ">
+                    <img src='https://www.kindpng.com/picc/m/588-5889138_cute-email-icon-png-transparent-png.png' id="email" alt='email' className='link'/>
                 </a>
             </section>
             <section className="fellow-two">
@@ -41,10 +46,16 @@ const About = () => {
             <section className="fellow-three">
                 <img src={tom} alt=""></img>
                 <h3>Tom LaTulipe</h3>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
                 <a href="https://github.com/Tetracell">
                 <img src='https://cdn4.iconfinder.com/data/icons/geomicons/32/672344-github-512.png' id="github" alt='github-logo' className='link'/>
                 </a> 
+                <a href="">
+                    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png' id="linkedin" alt='linkedin-logo' className='link'/>
+                </a>
+                <a href="mailto: ">
+                    <img src='https://www.kindpng.com/picc/m/588-5889138_cute-email-icon-png-transparent-png.png' id="email" alt='email' className='link'/>
+                </a>
             </section>
             </div>
         </div>
