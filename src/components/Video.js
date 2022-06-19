@@ -1,7 +1,7 @@
 import React from "react";
 import YouTube from "react-youtube";
 import { useParams } from "react-router-dom";
-import './video.css';
+import "./video.css";
 
 //Display a sample video in place to make sure functionality works
 const Video = () => {
@@ -16,8 +16,7 @@ const Video = () => {
     },
   };
 
-  const onReady = () => {
-  };
+  const onReady = () => {};
 
   return (
     <div>
