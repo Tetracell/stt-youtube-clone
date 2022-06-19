@@ -1,22 +1,44 @@
-.navbar img{
-    float: left;
-    width: 100px;
-    padding: 5px;
-}
-
 .navbar{
     background-color: red;
     border-radius: 10px;
-    line-height: 50px;
-    height: 50px;
+    overflow: hidden;
+}
+
+.navbar img{
+    float: left;
+    width: 100px;
+    padding: 20px;
 }
 
 #nav-list{
     list-style: none;
 }
 
-#nav-list li{
-    display: inline;
-    font-size: 18px;
-    margin: 15px;
+#nav-list a{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
  }
+
+ #homelink a{
+    text-decoration: none;
+    color: white;
+ }
+
+ #aboutlink a{
+    text-decoration: none;
+    color: white;
+ }
+
+ #homelink a:hover{
+    text-decoration: underline;
+    color: black;
+ }
+
+ #aboutlink a:hover{
+    text-decoration: underline;
+    color: black;
+ }
+ 

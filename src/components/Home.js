@@ -42,7 +42,7 @@ const Home = () => {
           ></input>
         </label>
         <br />
-        <button type="submit">Search</button>
+        <button type="submit" id='search-button'>Search</button>
       </form>
       <div className="videolist">
       <VideoList results={results} />

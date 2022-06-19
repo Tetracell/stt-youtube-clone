@@ -22,7 +22,7 @@ const VideoList = ({ results }) => {
                 id="verified"
               />
             </p>
-          </section>
+            </section>
         </div>
       );
     });
