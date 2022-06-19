@@ -1,8 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./VideoList.css";
+import YouTube from "react-youtube";
 
 const VideoList = ({ results }) => {
+  const options = {
+    height: "190",
+    width: "400",
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 0,
+    },
+  };
+
   if (!results) {
     return <p> Error: 404 </p>;
   } else {
@@ -10,11 +20,9 @@ const VideoList = ({ results }) => {
       return (
         <div key={item.id.videoId} className="video">
           <section>
-            <Link to={`video/${item.id.videoId}`}>
-              <img src={item.snippet.thumbnails.medium.url} alt="" />
-            </Link>
+            <YouTube videoId={item.id.videoId} opts={options} />
             <p>
-              {item.snippet.title}
+              <Link to={`video/${item.id.videoId}`}>{item.snippet.title}</Link>
               <br />
               {item.snippet.channelTitle}{" "}
               <img
@@ -22,7 +30,7 @@ const VideoList = ({ results }) => {
                 id="verified"
               />
             </p>
-            </section>
+          </section>
         </div>
       );
     });
