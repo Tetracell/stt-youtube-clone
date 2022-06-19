@@ -1,13 +1,22 @@
 .videolist{
     display: grid;
-    grid-template-areas: "a b c";
+    grid-template-columns: repeat(3, minmax(0, 1fr));
  }
 
  .video{
     font-size: medium;
     text-align: center;
+    padding: 10px;
+ }
+
+ .video p{
+   max-width: 500px;
  }
 
  #verified{
     width: 13px;
+ }
+
+ .video:hover{
+   transform: scale(1.15)
  }

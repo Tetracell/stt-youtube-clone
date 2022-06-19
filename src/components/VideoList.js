@@ -9,9 +9,14 @@ const VideoList = ({ results }) => {
       return (
         <div key={item.id.videoId} className="video">
             <Link to="video/:id" />
-            <img src={item.snippet.thumbnails.medium.url} /> 
-            <p>{item.snippet.title}</p>
-            <p>{item.snippet.channelTitle} <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/YT_Official_Verified_Checkmark_Circle.svg/1024px-YT_Official_Verified_Checkmark_Circle.svg.png' id='verified'/></p>
+            <section>
+            <img src={item.snippet.thumbnails.medium.url} alt=''/> 
+            <p>
+              {item.snippet.title}
+              <br/>
+              {item.snippet.channelTitle} <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/YT_Official_Verified_Checkmark_Circle.svg/1024px-YT_Official_Verified_Checkmark_Circle.svg.png' id='verified'/>
+            </p>
+            </section>
         </div>
       );
     });

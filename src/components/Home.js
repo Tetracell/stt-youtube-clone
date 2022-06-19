@@ -13,7 +13,7 @@ const Home = () => {
     e.preventDefault();
     try {
       fetch(
-        `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=${request}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`
+        `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=9&q=${request}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`
       )
         .then((response) => response.json())
         .then((data) => {
@@ -33,14 +33,14 @@ const Home = () => {
           <br />
           <input
             type="text"
-            placeholder="search here"
+            placeholder="Search..."
             id="search-bar"
             name="search"
-            size="50"
             value={request}
             onChange={(e) => setRequest(e.target.value)}
           ></input>
         </label>
+        <br />
         <button type="submit">Search</button>
       </form>
       <div className="videolist">
