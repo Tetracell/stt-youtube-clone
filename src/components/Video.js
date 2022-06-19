@@ -20,9 +20,6 @@ const Video = () => {
 
   return (
     <div>
-
-      <YouTube videoId={videoId.id} opts={options} />
-
       <section className='video-show'>
       <YouTube videoId={videoId.id} opts={options}/>
       </section>
