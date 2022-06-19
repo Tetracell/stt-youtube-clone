@@ -13,10 +13,10 @@ export const Error = ({ ...props }) => {
     <div className="modal">
       <div className="modal-content">
         <div className="modal-header">
-          <h4 className="modal-title">Error reason</h4>
+          <h4 className="modal-title">Error Encountered!</h4>
         </div>
         <div className="modal-body">
-          This is the content of the error
+          {props.error}
         </div>
         <div className="modal-footer">
           <button onClick={props.onClose} className="button">Close</button>

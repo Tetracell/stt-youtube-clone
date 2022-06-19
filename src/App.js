@@ -14,15 +14,11 @@ import { Error } from "./components/Error";
 // going to be neccessary.
 
 const App = () => {
-  const [show, setShow] = useState(false);
-
   return (
     <div className="App">
       <header className="App-header">
         <div>
           <Nav />
-          <button onClick={() => setShow(true)}>Show modal</button>
-          <Error onClose={()=> setShow(false)} show={show}/>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/about" element={<About />} />
