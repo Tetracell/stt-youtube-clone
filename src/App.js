@@ -8,6 +8,10 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import About from "./components/About";
 import Video from "./components/Video";
+import { Error } from "./components/Error";
+
+//<Route path="*" element={<Error setIsOpen={setIsOpen}/>} /> Stashed route for now, not sure if
+// going to be neccessary.
 
 const App = () => {
   return (

@@ -14,16 +14,20 @@ const Video = () => {
     width: "600",
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
-      autoplay: 1,
+      autoplay: 0,
     },
   };
 
   return (
     <div>
+
+      <YouTube videoId={videoId.id} opts={options} />
+
       <section className='video-show'>
       <YouTube videoId={videoId.id} opts={options}/>
       </section>
       <Comments />
+
     </div>
   );
 };

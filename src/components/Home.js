@@ -3,16 +3,28 @@ import React from "react";
 import { useState } from "react";
 
 import VideoList from "./VideoList";
+import { Error } from "./Error";
+import Video from "./Video";
+
+import { useState } from "react";
+import VideoList from "./VideoList";
+
 
 import "./Home.css";
 
 const Home = () => {
   const [request, setRequest] = useState("");
   const [results, setResults] = useState([]);
+  const [show, setShow] = useState(false);
+  const [err, setErr] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     try {
+      if (!request) {
+        throw "Please enter a search request!";
+      }
       fetch(
         `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=9&q=${request}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`
       )
@@ -23,12 +35,17 @@ const Home = () => {
         });
     } catch (error) {
       console.log(error);
+      setShow(true);
+      setErr(error);
+
     }
     setRequest("");
   };
 
   return (
     <div>
+      {/* <button onClick={() => setShow(true)}>Show modal</button> */}
+      <Error onClose={() => setShow(false)} show={show} error={err}/>
       <form onSubmit={handleSubmit} className="form">
         <label>
           <br />
@@ -45,7 +62,7 @@ const Home = () => {
         <button type="submit" id='search-button'>Search</button>
       </form>
       <div className="videolist">
-      <VideoList results={results} />
+        <VideoList results={results} />
       </div>
     </div>
   );
