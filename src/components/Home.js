@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
 import VideoList from "./VideoList";
+import { Error } from "./Error";
 import Video from "./Video";
 import "./Home.css";
 
@@ -12,7 +13,7 @@ const Home = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     try {
       if (!request) {
         throw "Please enter a search request!";
@@ -27,6 +28,11 @@ const Home = () => {
         });
     } catch (error) {
       console.log(error);
+      return (
+        <>
+          <Error error={error} />
+        </>
+      );
     }
     setRequest("");
   };
