@@ -1,5 +1,4 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
 import VideoList from "./VideoList";
@@ -28,11 +27,6 @@ const Home = () => {
         });
     } catch (error) {
       console.log(error);
-      return (
-        <>
-          <Error error={error} />
-        </>
-      );
     }
     setRequest("");
   };
