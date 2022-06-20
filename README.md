@@ -30,5 +30,6 @@ You can find our Miro board [here](https://miro.com/welcomeonboard/QkNmN0JmRU1nM
 
 
 ## Example of error modal
-![home](https://user-images.githubusercontent.com/8891666/174676077-215de829-927d-414f-966f-bcb2feb6088b.jpg)
+![error_modal_example](https://user-images.githubusercontent.com/8891666/174676260-a7bb27ba-6c48-430d-acda-6d0a040aa88e.jpg)
+
 
