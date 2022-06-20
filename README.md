@@ -13,23 +13,22 @@ You can find our Miro board [here](https://miro.com/welcomeonboard/QkNmN0JmRU1nM
 
 
 
-`Work in progress...`
-#Home page
+## Home page
 ![home](https://user-images.githubusercontent.com/8891666/174675914-1bb56fa9-466d-4811-be05-4ee203497bac.jpg)
 
 
-#About us
+## About us
 ![about](https://user-images.githubusercontent.com/8891666/174675978-63335ba6-a5a6-451e-a60c-a31e535e42bc.jpg)
 
 
-#Search results example
+## Search results example
 ![search_results](https://user-images.githubusercontent.com/8891666/174676009-db196b3e-b468-4072-9699-0866e4b4a362.jpg)
 
 
-#Single video w/ comments section
+## Single video w/ comments section
 ![video](https://user-images.githubusercontent.com/8891666/174676036-846fa020-0e72-4e6b-ae27-0d2c565ea5b1.jpg)
 
 
-#Example of error modal
+## Example of error modal
 ![home](https://user-images.githubusercontent.com/8891666/174676077-215de829-927d-414f-966f-bcb2feb6088b.jpg)
 
