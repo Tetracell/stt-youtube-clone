@@ -8,7 +8,6 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Video from "./components/Video";
 
-
 //<Route path="*" element={<Error setIsOpen={setIsOpen}/>} /> Stashed route for now, not sure if
 // going to be neccessary.
 

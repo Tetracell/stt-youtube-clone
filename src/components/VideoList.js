@@ -4,7 +4,6 @@ import "./VideoList.css";
 import YouTube from "react-youtube";
 
 const VideoList = ({ results }) => {
-
   const options = {
     height: "190",
     width: "400",
@@ -19,7 +18,7 @@ const VideoList = ({ results }) => {
   } else {
     return results.map((item) => {
       return (
-        <div key={item.id.videoId} >
+        <div key={item.id.videoId}>
           <section className="video">
             <YouTube videoId={item.id.videoId} opts={options} />
             <p>

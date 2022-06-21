@@ -14,14 +14,13 @@ const Comments = () => {
         ...prevState,
         {
           commenter,
-          comment
+          comment,
         },
       ];
     });
     setComment("");
     setCommenter("");
   };
-
 
   return (
     <div className="comments">
@@ -36,7 +35,7 @@ const Comments = () => {
               placeholder="..."
               className="name"
               value={commenter}
-              onChange={(e)=>setCommenter(e.target.value)}
+              onChange={(e) => setCommenter(e.target.value)}
             />
           </label>
           <br></br>
@@ -49,8 +48,7 @@ const Comments = () => {
               placeholder="..."
               className="comment"
               value={comment}
-              onChange={(e)=>setComment(e.target.value)}
-              
+              onChange={(e) => setComment(e.target.value)}
             />
           </label>
           <br></br>
@@ -75,6 +73,5 @@ const Comments = () => {
     </div>
   );
 };
-
 
 export default Comments;
