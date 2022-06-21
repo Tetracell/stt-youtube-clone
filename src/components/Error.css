@@ -4,18 +4,19 @@
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
 }
 
 .modal-content {
-  width:500px;
+  width: 500px;
   background-color: #fff;
 }
 
-.modal-header, .modal-footer {
+.modal-header,
+.modal-footer {
   padding: 10px;
 }
 
@@ -29,14 +30,21 @@
   border-bottom: 1px solid #eee;
 }
 
+.modal-footer button {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 15px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  width: 100px;
+}
 
-
-
-
-
-
-
-
+.modal-footer button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+}
 
 /* .darkBG {
     background-color: rgba(0, 0, 0, 0.2);

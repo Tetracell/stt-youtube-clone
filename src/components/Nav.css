@@ -1,44 +1,62 @@
-.navbar{
-    background-color: red;
-    border-radius: 10px;
-    overflow: hidden;
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 2%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  background: red;
+  position: sticky;
+  top: 0;
 }
 
-.navbar img{
-    float: left;
-    width: 100px;
-    padding: 20px;
+#ytlogo {
+  width: 100px;
 }
 
-#nav-list{
-    list-style: none;
+#homelogo {
+  background-color: white;
+  border-radius: 30px;
+  float: left;
+  width: 25px;
+  margin-right: 5px;
 }
 
-#nav-list a{
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
- }
+#abouticon{
+   background-color: white;
+  border-radius: 30px;
+  float: left;
+  width: 25px;
+  margin-right: 5px;
 
- #homelink a{
-    text-decoration: none;
-    color: white;
- }
+}
 
- #aboutlink a{
-    text-decoration: none;
-    color: white;
- }
+#nav-list {
+  list-style: none;
+}
 
- #homelink a:hover{
-    text-decoration: underline;
-    color: black;
- }
+#nav-list a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+}
 
- #aboutlink a:hover{
-    text-decoration: underline;
-    color: black;
- }
- 
+#homelink a {
+  text-decoration: none;
+  color: white;
+}
+
+#aboutlink a {
+  text-decoration: none;
+  color: white;
+}
+
+#homelink a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+#aboutlink a:hover {
+  text-decoration: underline;
+  color: black;
+}

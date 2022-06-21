@@ -3,7 +3,6 @@ import VideoList from "./VideoList";
 import { Error } from "./Error";
 import { useState } from "react";
 
-
 import "./Home.css";
 
 const Home = () => {

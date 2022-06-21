@@ -84,4 +84,28 @@
 .link{
     padding-right: 5px;
 }
+  
+   @media(max-width: 900px){
+    .fellows{
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      margin: auto;
+    width: 30%;
+    }
 
+    .fellow-one{
+        grid-column: 1;
+        border: 1px solid black;
+    }
+
+    .fellow-two{
+        grid-column: 1;
+    }
+
+    .fellow-three{
+        grid-column: 1;
+    }
+
+
+   }
+  

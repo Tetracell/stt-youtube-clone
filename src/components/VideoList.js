@@ -19,8 +19,8 @@ const VideoList = ({ results }) => {
   } else {
     return results.map((item) => {
       return (
-        <div key={item.id.videoId} className="video">
-          <section>
+        <div key={item.id.videoId} >
+          <section className="video">
             <YouTube videoId={item.id.videoId} opts={options} />
             <p>
               <Link to={`video/${item.id.videoId}`}>{item.snippet.title}</Link>
