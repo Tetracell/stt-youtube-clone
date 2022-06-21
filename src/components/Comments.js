@@ -25,12 +25,12 @@ const Comments = () => {
             <form onSubmit={handleComments}>
                 <label>
                     NAME:
-                    <input type='text' name="commenter" id="commenter" placeholder="..." className="name"/>
+                    <input type='text' name="commenter" id="commenter" placeholder="" className="name"/>
                 </label>
                 <br></br>
                 <label>
                     COMMENT:
-                    <input type='text' name='comment' id="comment" placeholder="..." className="comment"/>
+                    <input type='text' name='comment' id="comment" placeholder="" className="comment"/>
                 </label>
                 <br></br>
                 <button type='submit' id="submit" className="comment-button">Add Comment</button>

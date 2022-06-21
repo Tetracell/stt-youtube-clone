@@ -24,7 +24,6 @@ const Video = () => {
       <YouTube videoId={videoId.id} opts={options}/>
       </section>
       <Comments />
-
     </div>
   );
 };
