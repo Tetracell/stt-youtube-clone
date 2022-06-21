@@ -15,7 +15,7 @@ const Home = () => {
     e.preventDefault();
 
     try {
-      if (!request) {
+      if (!request.length) {
         throw "Please enter a search request!";
       }
       fetch(
@@ -24,13 +24,20 @@ const Home = () => {
         .then((response) => response.json())
         .then((data) => {
           console.log(data);
+          if (data.items.length === 0) {
+            throw "No results found: Please try again!";
+          }
           setResults(data.items);
+        })
+        .catch((error) => {
+          console.log(error);
+          setShow(true);
+          setErr(error);
         });
     } catch (error) {
       console.log(error);
       setShow(true);
       setErr(error);
-
     }
     setRequest("");
   };
@@ -38,7 +45,7 @@ const Home = () => {
   return (
     <div>
       {/* <button onClick={() => setShow(true)}>Show modal</button> */}
-      <Error onClose={() => setShow(false)} show={show} error={err}/>
+      <Error onClose={() => setShow(false)} show={show} error={err} />
       <form onSubmit={handleSubmit} className="form">
         <label>
           <br />
@@ -52,7 +59,9 @@ const Home = () => {
           ></input>
         </label>
         <br />
-        <button type="submit" id='search-button'>Search</button>
+        <button type="submit" id="search-button">
+          Search
+        </button>
       </form>
       <div className="videolist">
         <VideoList results={results} />
