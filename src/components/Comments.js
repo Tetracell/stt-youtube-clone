@@ -22,6 +22,7 @@ const Comments = () => {
     setCommenter("");
   };
 
+
   return (
     <div className="comments">
       <section>
@@ -74,5 +75,6 @@ const Comments = () => {
     </div>
   );
 };
+
 
 export default Comments;
