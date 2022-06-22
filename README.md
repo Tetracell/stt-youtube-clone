@@ -29,7 +29,8 @@ You can find our Miro board [here](https://miro.com/welcomeonboard/QkNmN0JmRU1nM
 ![video](https://user-images.githubusercontent.com/8891666/174676036-846fa020-0e72-4e6b-ae27-0d2c565ea5b1.jpg)
 
 
-## Example of error modal
+## Example of error modal and catching a 400 error
 ![error_modal_example](https://user-images.githubusercontent.com/8891666/174676260-a7bb27ba-6c48-430d-acda-6d0a040aa88e.jpg)
+![404_error_example](https://github.com/Tetracell/stt-youtube-clone/blob/main/readmePics/400_error_example.jpg)
 
 
