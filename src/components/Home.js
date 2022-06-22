@@ -21,11 +21,20 @@ const Home = () => {
       fetch(
         `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=9&q=${request}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`
       )
-        .then((response) => response.json())
+        .then((response) => {
+          if (response.status === 400) {
+            throw "400 Error - please try again later";
+          }
+          response.json();
+        })
         .then((data) => {
           console.log(data);
           if (data.items.length === 0) {
             throw "No results found: Please try again!";
+          }
+
+          if (data.status === 200) {
+            throw "Everything probably works";
           }
           setResults(data.items);
         })
