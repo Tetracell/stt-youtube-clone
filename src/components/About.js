@@ -67,13 +67,12 @@ const About = () => {
           <p>
             Hi! My name is Sam and I am currently working with the World Day of
             Prayer International Committee as their Administrative &
-            Communications Associate. I am Puerto Rican but have lived in NY my
+            Communications Associate. It is a small non-profit dedicated to bringing awareness to the many issues faced by women and children around the world and providing support. I am Puerto Rican but have lived in NY my
             whole life. I love the city but enjoy visting my island as much as
-            possible. I graduated Hunter College with a BA in Psychology but am
-            now developing my web development skills in Javascript, HTML, CSS
-            and React as a Pursuit fellow. In my free time I enjoy roller
+            possible. I graduated Hunter College with a BA in Psychology in 2014 but I am
+            now developing my skills in web development as a Pursuit fellow learning languages such as Javascript, HTML, and CSS to use in tandem with the React library. In my free time I enjoy roller
             skating, playing video games, reading, and binge-watching my
-            favorite tv shows or having move marathons.
+            favorite tv shows or having movie marathons.
           </p>
           <a href="https://github.com/samfigueroa92">
             <img
