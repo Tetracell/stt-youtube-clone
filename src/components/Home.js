@@ -23,18 +23,14 @@ const Home = () => {
       )
         .then((response) => {
           if (response.status === 400) {
-            throw "400 Error - please try again later";
+            throw "400 error - please try again";
           }
-          response.json();
+          return response.json();
         })
         .then((data) => {
           console.log(data);
           if (data.items.length === 0) {
             throw "No results found: Please try again!";
-          }
-
-          if (data.status === 200) {
-            throw "Everything probably works";
           }
           setResults(data.items);
         })
