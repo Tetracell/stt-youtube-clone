@@ -73,7 +73,7 @@ const About = () => {
             now developing my web development skills in Javascript, HTML, CSS
             and React as a Pursuit fellow. In my free time I enjoy roller
             skating, playing video games, reading, and binge-watching my
-            favorite tv shows or having move marathons.
+            favorite tv shows or having movie marathons.
           </p>
           <a href="https://github.com/samfigueroa92">
             <img
