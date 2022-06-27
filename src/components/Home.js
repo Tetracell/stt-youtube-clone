@@ -28,7 +28,6 @@ const Home = () => {
           return response.json();
         })
         .then((data) => {
-          console.log(data);
           if (data.items.length === 0) {
             throw "No results found: Please try again!";
           }

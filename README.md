@@ -11,6 +11,7 @@ You can find our Trello board [here](https://trello.com/invite/b/D8tMfo5v/1dd34e
 
 You can find our Miro board [here](https://miro.com/welcomeonboard/QkNmN0JmRU1nMURsTkxkU2Jnc3BHYkVySTBWaEc4MmFySWpaTXdyeHBacTNCMkpWeVY0Mnc1d3Vtc3JDRHF5N3wzNDU4NzY0NTI0OTAwMjQ4NDI3?share_link_id=430644519698).
 
+Link to our Netlify deplotment [here](https://exquisite-horse-7d011c.netlify.app/).
 
 
 ## Home page
