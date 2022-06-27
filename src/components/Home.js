@@ -49,7 +49,6 @@ const Home = () => {
 
   return (
     <div>
-      {/* <button onClick={() => setShow(true)}>Show modal</button> */}
       <Error onClose={() => setShow(false)} show={show} error={err} />
       <form onSubmit={handleSubmit} className="form">
         <label>

@@ -32,7 +32,7 @@ const Comments = () => {
               type="text"
               name="commenter"
               id="commenter"
-              placeholder="..."
+              placeholder=""
               className="name"
               value={commenter}
               onChange={(e) => setCommenter(e.target.value)}
@@ -45,7 +45,7 @@ const Comments = () => {
               type="text"
               name="comment"
               id="comment"
-              placeholder="..."
+              placeholder=""
               className="comment"
               value={comment}
               onChange={(e) => setComment(e.target.value)}
@@ -60,13 +60,14 @@ const Comments = () => {
       <section className="comments-list">
         {comments.map((comment) => {
           return (
-            <p>
-              <span>
-                {comment.commenter[0].toUpperCase() +
-                  comment.commenter.slice(1)}
-              </span>
-              : {comment.comment}
-            </p>
+              <p>
+              <img src="https://www.freeiconspng.com/thumbs/profile-icon-png/am-a-19-year-old-multimedia-artist-student-from-manila--21.png" />
+                <span>
+                  {comment.commenter[0].toUpperCase() +
+                    comment.commenter.slice(1)}
+                </span>
+                : {comment.comment}
+              </p>
           );
         })}
       </section>
